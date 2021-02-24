@@ -7,7 +7,7 @@ age = ""
 
 password_list = []
 
-user_list = []
+user_list = ["bdsc", "pass1234"]
 
 
 
@@ -29,7 +29,7 @@ print("Welcome to the password manager")
 
 
 name = input("What is your name? ")
-age = int(input("What is your age? "))
+age = float(input("What is your age? "))
 
 
 
@@ -38,13 +38,15 @@ while True:
 
     if chosen_option == "1":
         #call add_password function
+        print("test")
 
     elif chosen_option == "2":
         #Call view_passwords function
-
+        print("test")
 
     elif chosen_option == "3":
         #End programme
+        break
 
     else:
         print("That is not a valid option. Please enter a number from 1 to 3")
