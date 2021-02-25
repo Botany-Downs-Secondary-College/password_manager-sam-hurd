@@ -29,8 +29,13 @@ print("Welcome to the password manager")
 
 
 name = input("What is your name? ")
-age = float(input("What is your age? "))
-
+while True:
+    try:
+        age = float(input("What is your age? "))
+        chosen_option = menu(name, age)
+    
+    except:
+        print("Please enter a number")
 
 
 while True:
